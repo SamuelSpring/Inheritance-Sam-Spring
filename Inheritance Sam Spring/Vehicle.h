@@ -2,12 +2,16 @@
 using namespace std;
 
 class Vehicle {
-private:
+protected:
 	string manufacturer;
 	int yearBuilt;
 public:
 	Vehicle();
 	Vehicle(string manufacturer, int yearBuilt);
+	void setManufacturer(string manufacturer);
+	string getManufacturer();
+	void setYearBuilt(int yearBuilt);
+	int getYearBuilt();
 	void displayInfo();
 
 };
