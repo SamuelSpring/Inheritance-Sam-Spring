@@ -1,6 +1,6 @@
 #include "Vehicle.h"
 
-class Truck : protected Vehicle {
+class Truck : public Vehicle {
 private:
 	int towingCapacity;
 public:

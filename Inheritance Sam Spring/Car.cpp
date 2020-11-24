@@ -1,9 +1,5 @@
 #include "Car.h"
 
-Car::Car() {
-	numberOfdoors = 0;
-}
-
 Car::Car(int numberOfdoors) {
 	this->numberOfdoors = numberOfdoors;
 }
@@ -17,6 +13,6 @@ void Car::setNumberOfDoors(int numberofDoors) {
 }
 
 void Car::displayInfo() {
-	displayInfo();
+	Vehicle::displayInfo();
 	cout << "The number of doors is: " << numberOfdoors << endl;
 }

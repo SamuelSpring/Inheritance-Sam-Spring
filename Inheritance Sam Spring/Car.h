@@ -1,12 +1,16 @@
 #include "Vehicle.h"
 
-class Car : protected Vehicle {
-private:
+class Car : public Vehicle {
+protected:
 	int numberOfdoors;
 public:
-	Car();
+	Car() : Vehicle() {
+		numberOfdoors = 0;
+	}
 	Car(int);
+	
 	int getNumberOfDoors();
 	void setNumberOfDoors(int);
 	void displayInfo();
 };
+

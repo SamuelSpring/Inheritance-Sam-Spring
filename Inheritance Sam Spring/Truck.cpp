@@ -1,3 +1,4 @@
+
 #include "Truck.h"
 
 Truck::Truck() {
@@ -17,6 +18,6 @@ void Truck::setTowingCapacity(int towingCapacity) {
 }
 
 void Truck::displayInfo(){
-	displayInfo();
+	Vehicle::displayInfo();
 	cout << "Towing capacity: " << towingCapacity << endl;
 }
